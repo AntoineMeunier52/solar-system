@@ -1,26 +1,87 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const solarySystem = [ 
+fetch('https://api.le-systeme-solaire.net/rest/bodies/soleil')
+  .then((response) => {
+    return response.json()
+  })
+  .then((result) => {
+    console.log(result)
+  }),  
+
+fetch('https://api.le-systeme-solaire.net/rest/bodies/mercure')
+  .then((response) => {
+    return response.json()
+  })
+  .then((result) => {
+    console.log(result)
+  }),
+
+fetch('https://api.le-systeme-solaire.net/rest/bodies/venus')
+  .then((response) => {
+    return response.json()
+  })
+  .then((result) => {
+    console.log(result)
+  }),
+
+fetch('https://api.le-systeme-solaire.net/rest/bodies/terre')
+  .then((response) => {
+    return response.json()
+  })
+  .then((result) => {
+    console.log(result)
+  }),
+
+fetch('https://api.le-systeme-solaire.net/rest/bodies/mars')
+  .then((response) => {
+    return response.json()
+  })
+  .then((result) => {
+    console.log(result)
+  }),
+
+fetch('https://api.le-systeme-solaire.net/rest/bodies/jupiter')
+  .then((response) => {
+    return response.json()
+  })
+  .then((result) => {
+    console.log(result)
+  }),
+
+fetch('https://api.le-systeme-solaire.net/rest/bodies/saturne')
+  .then((response) => {
+    return response.json()
+  })
+  .then((result) => {
+    console.log(result)
+  }),
+
+fetch('https://api.le-systeme-solaire.net/rest/bodies/uranus')
+  .then((response) => {
+    return response.json()
+  })
+  .then((result) => {
+    console.log(result)
+  }),
+
+fetch('https://api.le-systeme-solaire.net/rest/bodies/neptune')
+  .then((response) => {
+    return response.json()
+  })
+  .then((result) => {
+    console.log(result)
+  })
+]
+
+class App extends React.Component {
+  render(){ 
+    return (
+      <div className="App">
+        <h1>the system solaire</h1>
+      </div>
+    );
+  }
 }
 
 export default App;
